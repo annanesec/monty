@@ -55,7 +55,6 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
-
+void m_pall(stack_t **stack, __attribute__((unused))unsigned int line_number);
 
 #endif /* _MONTY_H_ */
