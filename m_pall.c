@@ -7,18 +7,18 @@
  *
  * Return: void
  */
-void m_pall(stack_t **stack, __attribute__((unused))unsigned int line_number)
+void m_pall(stack_t **stack, unsigned int line_number)
 {
-	stack_t *head;
+	stack_t *head_of_stack;
 
 	(void)(line_number);
 
-	head = *stack;
-	while (head != NULL)
+	head_of_stack = *stack;
+	while (head_of_stack != NULL)
 	{
-		printf("%d\n", head->n);
-		head = head->next;
-		if (head == *stack)
+		printf("%d\n", head_of_stack->n);
+		head_of_stack = head_of_stack->next;
+		if (head_of_stack == *stack)
 		{
 			return;
 		}
